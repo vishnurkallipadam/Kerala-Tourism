@@ -1,0 +1,673 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* caorusals */
+.scrollimg{
+    height: 500px;
+}
+
+/* contents */
+
+.keralaContent{
+    text-align: justify;
+    height: 500px;
+    padding-top: 2rem;
+    
+    
+}
+
+.keralaContent p{
+    padding-top: 2rem;
+}
+
+.keralaContent h2{
+    color: darkblue;
+}
+
+.keralaMap{
+    height: 500px;
+    width: 40%;
+    float: right;
+
+}
+
+/* districts */
+
+.districtHead{
+    
+    height: 480px;
+    width: 100%;
+    background-image: url("https://wallpapercave.com/wp/wp3500261.jpg");
+    background-position: center;
+    text-align: center;
+}
+
+.districtHead h1{
+    padding-top: 18rem;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.discards{
+    margin-top: 3rem;
+}
+.discardimg{
+    height: 20rem;
+
+}
+
+.card-title{
+    text-align: center;
+}
+
+/* tvpuram */
+
+.tvpuramHead{
+    
+    height: 480px;
+    width: 100%;
+    background-image: url("https://oneday.travel/wp-content/uploads/one-day-trivandrum-to-kanyakumari-trip-by-car.jpg");
+    background-position: center;
+    text-align: center;
+}
+
+.tvpuramHead h1{
+    padding-top: 15rem;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.tvpuramMap{
+    height: 500px;
+    width: 40%;
+    float: right;
+    padding-top: 2rem;
+}
+
+.tvpuramContent{
+    text-align: justify;
+    height: 500px;
+    padding-top: 2rem;
+}
+/* tvpuram temple */
+.templeHead{
+    height: 2rem;
+    width: 100%;
+    margin-top: 6rem;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+
+
+
+.tvpuramtemplecards{
+    margin-top: 3rem;
+    padding: 1rem;
+}
+.tvpuramtemplecardimg{
+    height: 20rem;
+
+}
+
+.tvpuramtemplecontent{
+    padding-top: 2rem;
+    text-align: justify;
+    height: 500px; 
+    margin: 2rem;
+}
+.tvpuramtemplecontent p{
+    margin-right: 2rem;
+    padding-right: 2rem;
+    width: 70%;
+}
+
+.tvpuramtemplecontent img{
+    float: right;
+}
+
+/* tvpuram napier museum */
+.tvpurammuseumcards{
+    margin-top: 3rem;
+    padding: 1rem;
+}
+.tvpurammuseumcardimg{
+    height: 20rem;
+
+}
+
+.tvpurammuseumcontent{
+    padding-top: 2rem;
+    text-align: justify;
+    height: 500px; 
+    margin: 2rem;
+}
+.tvpurammuseumcontent p{
+    margin-right: 2rem;
+    padding-right: 2rem;
+    width: 70%;
+}
+
+.tvpurammuseumcontent img{
+    float: right;
+}
+.museumHead{
+    height: 2rem;
+    width: 100%;
+    
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+
+/* kollam */
+
+.kollamHead{
+    
+    height: 480px;
+    width: 100%;
+    background-image: url("https://www.gokeralab2b.com/wp-content/uploads/2021/01/2-2.jpg");
+    background-position: center;
+    text-align: center;
+}
+
+.kollamHead h1{
+    padding-top: 15rem;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.kollamMap{
+    height: 500px;
+    width: 40%;
+    float: right;
+    padding-top: 2rem;
+}
+
+.kollamContent{
+    text-align: justify;
+    height: 500px;
+    padding-top: 2rem;
+}
+/* jatayu */
+.jatayuHead{
+    height: 2rem;
+    width: 100%;
+    margin-top: 6rem;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+
+
+
+.jatayucards{
+    margin-top: 3rem;
+    padding: 1rem;
+}
+.jatayucardimg{
+    height: 20rem;
+
+}
+
+.jatayucontent{
+    padding-top: 2rem;
+    text-align: justify;
+    height: 500px; 
+    margin: 2rem;
+}
+.jatayucontent p{
+    margin-right: 2rem;
+    padding-right: 2rem;
+    width: 70%;
+}
+
+.jatayucontent img{
+    float: right;
+}
+
+/* ashtamudi */
+.ashtamudicards{
+    margin-top: 3rem;
+    padding: 1rem;
+}
+.ashtamudicardimg{
+    height: 20rem;
+
+}
+
+.ashtamudicontent{
+    padding-top: 2rem;
+    text-align: justify;
+    height: 500px; 
+    margin: 2rem;
+}
+.ashtamudicontent p{
+    margin-right: 2rem;
+    padding-right: 2rem;
+    width: 70%;
+}
+
+.ashtamudicontent img{
+    float: right;
+}
+.ashtamudiHead{
+    height: 2rem;
+    width: 100%;
+    
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+
+/* alappuzha */
+
+.alappuzhaHead{
+    
+    height: 480px;
+    width: 100%;
+    background-image: url("https://www.treebo.com/blog/wp-content/uploads/2018/08/A-Houseboat-on-the-Vembanad-Lake.jpg");
+    background-position: center;
+    text-align: center;
+}
+
+.alappuzhaHead h1{
+    padding-top: 15rem;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.alappuzhaMap{
+    height: 500px;
+    width: 40%;
+    float: right;
+    padding-top: 2rem;
+}
+
+.alappuzhaContent{
+    text-align: justify;
+    height: 500px;
+    padding-top: 2rem;
+}
+
+/* Pathanamthitta */
+
+.pathanamthittaHead{
+    
+    height: 480px;
+    width: 100%;
+    background-image: url("https://cdn.s3waas.gov.in/s3e2ef524fbf3d9fe611d5a8e90fefdc9c/uploads/2018/03/2018031643-1024x683.jpg");
+    background-position: center;
+    text-align: center;
+}
+
+.pathanamthittaHead h1{
+    padding-top: 15rem;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.pathanamthittaMap{
+    height: 500px;
+    width: 40%;
+    float: right;
+    padding-top: 2rem;
+}
+
+.pathanamthittaContent{
+    text-align: justify;
+    height: 500px;
+    padding-top: 2rem;
+}
+
+/* kottayam*/
+
+.kottayamHead{
+    
+    height: 480px;
+    width: 100%;
+    background-image: url("https://keralatourism.travel/images/destinations/headers/kottayam-kerala-tourism-entry-fee-timings-holidays-reviews-header.jpg");
+    background-position: center;
+    text-align: center;
+}
+
+.kottayamHead h1{
+    padding-top: 15rem;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.kottayamMap{
+    height: 500px;
+    width: 40%;
+    float: right;
+    padding-top: 2rem;
+}
+
+.kottayamContent{
+    text-align: justify;
+    height: 500px;
+    padding-top: 2rem;
+}
+
+/* idukki */
+
+.idukkiHead{
+    
+    height: 480px;
+    width: 100%;
+    background-image: url("https://img.onmanorama.com/content/dam/mm/en/travel/hourglass/images/2020/7/9/munnar-tea-plantation.jpg");
+    background-position: center;
+    text-align: center;
+}
+
+.idukkiHead h1{
+    padding-top: 15rem;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.idukkiMap{
+    height: 500px;
+    width: 40%;
+    float: right;
+    padding-top: 2rem;
+}
+
+.idukkiContent{
+    text-align: justify;
+    height: 500px;
+    padding-top: 2rem;
+}
+
+/* ernamkulam */
+
+.ekmHead{
+    
+    height: 480px;
+    width: 100%;
+    background-image: url("https://cdn.s3waas.gov.in/s3621bf66ddb7c962aa0d22ac97d69b793/uploads/bfi_thumb/2018031610-1-olw9p02a6yddmbnbt9xiqu13eg9cfyoc86ogjnsq6i.jpg");
+    background-position: center;
+    text-align: center;
+}
+
+.ekmHead h1{
+    padding-top: 15rem;
+    color: white ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.ekmMap{
+    height: 500px;
+    width: 40%;
+    float: right;
+    padding-top: 2rem;
+}
+
+.ekmContent{
+    text-align: justify;
+    height: 500px;
+    padding-top: 2rem;
+}
+
+/* thrissur */
+
+.thrissurHead{
+    
+    height: 480px;
+    width: 100%;
+    background-image: url("https://www.ekeralatourism.net/wp-content/uploads/2018/01/Vadakkunnathan-Temple-at-Thrissur.jpg");
+    background-position: center;
+    text-align: center;
+}
+
+.thrissurHead h1{
+    padding-top: 15rem;
+    color: white ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.thrissurMap{
+    height: 500px;
+    width: 40%;
+    float: right;
+    padding-top: 2rem;
+}
+
+.thrissurContent{
+    text-align: justify;
+    height: 500px;
+    padding-top: 2rem;
+}
+
+/* palakkad */
+
+.pkdHead{
+    
+    height: 480px;
+    width: 100%;
+    background-image: url("https://www.oyorooms.com/travel-guide/wp-content/uploads/2019/04/Malampuzha-Dam-.jpg");
+    background-position: center;
+    text-align: center;
+}
+
+.pkdHead h1{
+    padding-top: 15rem;
+    color: white ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.pkdMap{
+    height: 500px;
+    width: 40%;
+    float: right;
+    padding-top: 2rem;
+}
+
+.pkdContent{
+    text-align: justify;
+    height: 500px;
+    padding-top: 2rem;
+}
+
+/* malappuram */
+
+.mpuramHead{
+    
+    height: 480px;
+    width: 100%;
+    background-image: url("https://www.holidify.com/images/bgImages/MALAPPURAM.jpg");
+    background-position: center;
+    text-align: center;
+}
+
+.mpuramHead h1{
+    padding-top: 15rem;
+    color: white ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.mpuramMap{
+    height: 500px;
+    width: 40%;
+    float: right;
+    padding-top: 2rem;
+}
+
+.mpuramContent{
+    text-align: justify;
+    height: 500px;
+    padding-top: 2rem;
+}
+
+/* kozhikode*/
+
+.kozhikodeHead{
+    
+    height: 480px;
+    width: 100%;
+    background-image: url("https://www.keralatourism.org/images/picture/large/Beypore_Beach_1852.jpg");
+    background-position: center;
+    text-align: center;
+}
+
+.kozhikodeHead h1{
+    padding-top: 15rem;
+    color: white ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.kozhikodeMap{
+    height: 500px;
+    width: 40%;
+    float: right;
+    padding-top: 2rem;
+}
+
+.kozhikodeContent{
+    text-align: justify;
+    height: 500px;
+    padding-top: 2rem;
+}
+
+/* wayanad*/
+
+.wayanadHead{
+    
+    height: 480px;
+    width: 100%;
+    background-image: url("https://www.clubmahindra.com/blog/media/section_images/shuttersto-3740a7d7996d4a0.jpg");
+    background-position: center;
+    text-align: center;
+}
+
+.wayanadHead h1{
+    padding-top: 15rem;
+    color: white ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.wayanadMap{
+    height: 500px;
+    width: 40%;
+    float: right;
+    padding-top: 2rem;
+}
+
+.wayanadContent{
+    text-align: justify;
+    height: 500px;
+    padding-top: 2rem;
+}
+/* kannur*/
+
+.kannurHead{
+    
+    height: 480px;
+    width: 100%;
+    background-image: url("https://www.keralatourism.org/images/eco-tourism/destinations/Paithalmala1.jpg");
+    background-position: center;
+    text-align: center;
+}
+
+.kannurHead h1{
+    padding-top: 15rem;
+    color: white ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.kannurMap{
+    height: 500px;
+    width: 40%;
+    float: right;
+    padding-top: 2rem;
+}
+
+.kannurContent{
+    text-align: justify;
+    height: 500px;
+    padding-top: 2rem;
+}
+
+/* kasargod*/
+
+.kasargodHead{
+    
+    height: 480px;
+    width: 100%;
+    background-image: url("https://img.onmanorama.com/content/dam/mm/en/travel/travel-news/images/news20/bekal-fort.jpg.transform/schema-16x9/image.jpg");
+    background-position: center;
+    text-align: center;
+}
+
+.kasargodHead h1{
+    padding-top: 15rem;
+    color: white ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.kasargodMap{
+    height: 500px;
+    width: 40%;
+    float: right;
+    padding-top: 2rem;
+}
+
+.kasargodContent{
+    text-align: justify;
+    height: 500px;
+    padding-top: 2rem;
+}
+
+/* sign form */
+
+.sign{
+    background-image: url("https://img.traveltriangle.com/blog/wp-content/uploads/2020/01/cover-for-Why-You-Should-Visit-Kerala-In-Spring-_29th-Jan.jpg");
+    background-size: cover;
+  
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.signform{
+    padding-left: 10rem;
+    margin-top: 10rem;
+    background-color: azure;
+    height: 25rem;
+    width: 50rem;
+    margin-left: 25rem;
+    text-align: left;
+
+}
+
+.avatar{
+    margin-top: 1rem;
+    
+    margin-left: 8rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+}
+
+.button{
+    margin-top: 10px;
+    margin-bottom: 1rem;
+}

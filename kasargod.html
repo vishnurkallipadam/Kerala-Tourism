@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Tourism</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="images/kerala-tourism-logo.png"/>
+        <link rel="icon" type="image/png" href="images/kerala-tourism-logo.png"/>  
+   
+   <!-- bootstrap linking -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- nav bar -->
+    
+        <nav class="navbar  fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="images/kerala-tourism-logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="districts.html">Explore</a>
+                  </li>
+                 
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Districts
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="thiruvanathapuram.html">Thiruvananthapuram</a></li>
+                        <li><a class="dropdown-item" href="kollam.html">Kollam</a></li>
+                        <li><a class="dropdown-item " href="alappuzha.html">Alappuzha</a></li>
+                        <li><a class="dropdown-item" href="pathanamthitta.html">Pathanamthitta</a></li>
+                        <li><a class="dropdown-item" href="kottayam.html">Kottayam</a></li>
+                        <li><a class="dropdown-item" href="idukki.html">Idukki</a></li>
+                        <li><a class="dropdown-item" href="ernakulam.html">Ernakulam</a></li>
+                        <li><a class="dropdown-item" href="thrissur.html">Thrissur</a></li>
+                        <li><a class="dropdown-item" href="palakkad.html">Palakkad</a></li>
+                        <li><a class="dropdown-item" href="malappuram.html">Malappuram</a></li>
+                        <li><a class="dropdown-item" href="kozhikode.html">Kozhikode</a></li>
+                        <li><a class="dropdown-item" href="wayanad.html">Wayanad</a></li>
+                        <li><a class="dropdown-item" href="kannur.html">Kannur</a></li>
+                        <li><a class="dropdown-item active" href="kasargod.html">Kasaragod</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="signin.html">Join Us</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+                    <!-- heading -->
+
+                    <div class="kasargodHead" >
+                      <h1> <strong> Explore Kasaragod </strong></h1>
+                    </div>
+          
+                    <!-- contents -->
+          
+                    <div class="container">
+                        <div>
+                        <img class="kasargodMap" src="data:image/jpeg;base64,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" alt="">
+                        </div>
+          
+                        <div class="kasargodContent">
+                          <h2> Kasaragod </h2>
+                          <br>
+                          <p>
+                            The northernmost district of Kerala, Kasaragod is renowned for its hills, forts and water bodies. The coir and handloom industry here are extremely famous around the world. The place is also popular for its ancient temples and rich biodiversity. It is an important border district as well that regulates trade with a lot of neighbouring States. Legends regarding the district greet you at every turn on a visit here. A trip here is incomplete without visiting Bekal Fort, the most majestic and well maintained fort in South India.
+                          </p>
+          
+                        </div>
+                    
+                      </div>    
+          
+                      <!-- Bekal Fort -->
+          
+                      <div class="jatayuHead">
+                          <h4>Bekal Fort</h4>  
+                      </div>
+          
+                      <div class= "container">
+                          <div class="card-group">
+                              <div class="card jatayucards">
+                                <img class="jatayucardimg" src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcRjyaDufHlnIUHKaW72m6DPw56vCvFx16xZIE9kC4JQznGb7o6ayOrRdL1GHq2WLTqav_Gq4_tl4sMSVqr65zd5Qg" class="card-img-top" alt="...">
+                              </div>
+                              <div class="card jatayucards">
+                                <img class="jatayucardimg" src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcROgMu2HI-WcM3o59mgC-P5fmtyaYANvFEEtUiwN7cfB08NpuE5gq3mXa-WBiKJ0TnMXXzxGz7C4PXWVcDPEXCtyQ" class="card-img-top" alt="...">
+                              </div>
+                              <div class="card jatayucards">
+                                <img class="jatayucardimg" src="https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcTpSmbEUbZ7OvzP4BsSW1z0FuxZgm4MY87_945Nibk8AH7NRZ2Z9F4ef5mIIiqXhFgYuZR7dB7X7a5QwteJ6928xg" class="card-img-top" alt="...">
+                              </div>
+                            </div>
+          
+                            <div class="jatayucontent">
+                                <img src="https://www.google.com/maps/vt/bpb=CgwiChAOCgYIqAIQygESAggAEhQIAjIQCg4KCg0s52IHFSYguSw4ARoLEgVlbi1HQhoCSU4gACoFLQAAoD8" alt="">
+                                <p>
+                                  Kasaragod boasts of the largest and best preserved Fort in the whole of Kerala, bordered by a magnificent beach. Shaped like a giant keyhole, the historic Bekal Fort was built in the 17th century. This historic monument offers a superb view of the Arabian Sea from its tall observation towers, which were occupied by gigantic cannons till afew centuries ago.
+
+<br> Near the Fort is an old Mosque that is said to have been built by Tipu Sultan of Mysore. Originally constructed by the rulers of the ancient Kadampa Dynasty, the Fort changed hands over the years to the Kolathiri Rajas, the Vijayanagara Empire, Tipu Sultan and finally, the British East India Company.
+
+<br> Today, the Bekal Fort and its scenic surroundings are fast becoming an international tourist destination and a favourite shooting locale for film makers.
+                                </p>
+                            </div>
+                      </div>
+          
+                      <!-- Ranipuram  -->
+          
+                      <div class="museumHead">
+                          <h4>Ranipuram</h4>  
+                      </div>
+          
+                      <div class= "container">
+                          <div class="card-group">
+                              <div class="card ashtamudicards">
+                                <img class="ashtamudicardimg" src="https://media-cdn.tripadvisor.com/media/photo-s/0b/c9/7b/10/ranipuram-hills.jpg" class="card-img-top" alt="...">
+                              </div>
+                              <div class="card ashtamudicards">
+                                <img class="ashtamudicardimg" src="https://content.jdmagicbox.com/comp/kasaragod/q9/9999p4994.4994.170607180416.n8q9/catalogue/ranipuram-view-point-ranipuram-kasaragod-qtttpvsapk.jpg?clr=071d5f" class="card-img-top" alt="...">
+                              </div>
+                              <div class="card ashtamudicards">
+                                <img class="ashtamudicardimg" src="https://qph.fs.quoracdn.net/main-qimg-94fc40f64a090af7adf8e1e71b00e8d9" class="card-img-top" alt="...">
+                              </div>
+                            </div>
+          
+                            <div class="ashtamudicontent">
+                                <img src="https://www.google.com/maps/vt/bpb=CgwiChAOCgYIqAIQygESAggAEhQIAjIQCg4KCg0lCGcHFcWk6Sw4ARoLEgVlbi1HQhoCSU4gACoFLQAAoD8" alt="">
+                                <p>
+                                  A true natural beauty, Ranipuram is consistently eulogised for its vast green attractions - vistas of sprawling grasslands and hills, being the most captivating among them. Exhibiting as it does the breathtaking beauty of the mighty Western Ghats, this is one the most sought-after travel destinations in north Kerala that welcomes travellers, come rain or shine!
+
+                                Ranipuram, popularly known as the Ooty of Kerala, is situated 750 m above sea level in Kasaragod district. On one side of the lush green meadows lies Karnataka, sprawling up to the horizon, and on the other side, Kerala, that vast stretch of picturesque landscape limited only by an expanse of the ocean.
+
+                                Exciting trekking trails and pretty terrains are the reasons why Ranipuram is in every tourist’s bucket list. The trek to Ranipuram begins from Panathady, where the District Tourism Promotion Council (DTPC), Kasaragod offers accommodation.
+
+                                The trail paved with black stones leads you into the dark and misty woods. Where the steps end, the woods engulf you from all sides with its wildness. The early morning sun can hardly penetrate the thick canopy and you shuffle along in partial darkness, leaning on your stick for support, and sometimes pulling yourself up with the help of thick, sturdy roots, some large-hearted trees throw your way.
+
+                                The fencing along the trail gives you the chills as you realize how close you could be to a tusker in the darkness. An hour of this adventurous trek will lead you the limitless green meadows of Shola grasslands.
+
+                                Ranipuram is blessed with rare medicinal plants, as well as pretty orchids, and is also home to animals like wild boars, deer and monkeys.
+                                 </p>
+                            </div>
+                      </div>
+          
+                   
+
+         
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Tourism</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="images/kerala-tourism-logo.png"/>
+        <link rel="icon" type="image/png" href="images/kerala-tourism-logo.png"/>  
+   
+   <!-- bootstrap linking -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <!-- nav bar -->
+    
+        <nav class="navbar  fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="images/kerala-tourism-logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="districts.html">Explore</a>
+                  </li>
+                 
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Districts
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="thiruvanathapuram.html">Thiruvananthapuram</a></li>
+                        <li><a class="dropdown-item" href="kollam.html">Kollam</a></li>
+                        <li><a class="dropdown-item " href="alappuzha.html">Alappuzha</a></li>
+                        <li><a class="dropdown-item" href="pathanamthitta.html">Pathanamthitta</a></li>
+                        <li><a class="dropdown-item" href="kottayam.html">Kottayam</a></li>
+                        <li><a class="dropdown-item" href="idukki.html">Idukki</a></li>
+                        <li><a class="dropdown-item" href="ernakulam.html">Ernakulam</a></li>
+                        <li><a class="dropdown-item" href="thrissur.html">Thrissur</a></li>
+                        <li><a class="dropdown-item" href="palakkad.html">Palakkad</a></li>
+                        <li><a class="dropdown-item" href="malappuram.html">Malappuram</a></li>
+                        <li><a class="dropdown-item" href="kozhikode.html">Kozhikode</a></li>
+                        <li><a class="dropdown-item active" href="wayanad.html">Wayanad</a></li>
+                        <li><a class="dropdown-item" href="kannur.html">Kannur</a></li>
+                        <li><a class="dropdown-item" href="kasargod.html">Kasaragod</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="signin.html">Join Us</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+                    <!-- heading -->
+
+                    <div class="wayanadHead" >
+                      <h1> <strong> Explore Wayanad </strong></h1>
+                    </div>
+          
+                    <!-- contents -->
+          
+                    <div class="container">
+                        <div>
+                        <img class="wayanadMap" src="data:image/jpeg;base64,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" alt="">
+                        </div>
+          
+                        <div class="wayanadContent">
+                          <h2> Wayanad </h2>
+                          <br>
+                          <p>
+                            Adorning the northern hills of Kerala is the beautiful district of Wayanad, maintained by the District Tourism Promotion Council, Wayanad.  This area is famous for its large amount of camping and trekking trails, breathtaking waterfalls, caves, bird-watching sites, flora, fauna and an overall plethora of magnificent sights. This area has been a tourist favourite over the years. People are especially delighted by the range of exotic products including spices, coffee, tea, bamboo products, honey and herbal plants available here.  Kanthanpara Waterfalls is one hotspot in Wayanad that allures tourists from all over the world. Apart from these magnificent falls, Wayanad calls you to experience the stunning beauty of Karapuzha Dam, Pookode & Karlad Lake as well. If you are an adventure seeker, then Cheengari Rock Adventure Center is a must-visit place for you. Another must-visit place in Wayanad is the Edakkal Caves. The caves are two natural rock formations believed to have been formed by a large split in a huge rock. The carvings inside are extremely beautiful. 
+                          </p>
+          
+                        </div>
+                    
+                      </div>    
+          
+                      <!-- Edakkal Caves -->
+          
+                      <div class="jatayuHead">
+                          <h4>Edakkal Caves</h4>  
+                      </div>
+          
+                      <div class= "container">
+                          <div class="card-group">
+                              <div class="card jatayucards">
+                                <img class="jatayucardimg" src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS0zVSLkXeAqRqTrsbYjDqgZKX4wLr4naf6WkGwinFCDQl-h-oPXgWU1iZG6FKq0-RneLAwmIXezPsud9ebmRcBmQ" class="card-img-top" alt="...">
+                              </div>
+                              <div class="card jatayucards">
+                                <img class="jatayucardimg" src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTd9r6ld3dLFlTj4ua7cM542sjZjw_tYQ0TaAoM7wwTUdqncNtn1GiWXGwDd-Pu2UpdLNJtE7SYFt-MZbjE_MqxpQ" class="card-img-top" alt="...">
+                              </div>
+                              <div class="card jatayucards">
+                                <img class="jatayucardimg" src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcTbR3aL-uIsD7JUbFd-mDa_QIYaYj9qRihP0U_4uObu9RxiNH6S7PbTDc1D1PWmx-4759Pw0doZ0SuNgZICtzHKRg" class="card-img-top" alt="...">
+                              </div>
+                            </div>
+          
+                            <div class="jatayucontent">
+                                <img src="https://www.google.com/maps/vt/bpb=CgwiChAOCgYIqAIQygESAggAEhQIAjIQCg4KCg13He4GFSJtcC04ARoLEgVlbi1HQhoCSU4gACoFLQAAoD8" alt="">
+                                <p>
+                                  A trip to Edakkal Caves is like a journey into our forgotten past. Located 10 kms from Sulthan Bathery, they have provided historians with great information regarding the lives and habits of our ancestors. The caves are two natural rock formations believed to have been formed by a large split in a huge rock. The carvings inside are extremely beautiful. A trek up the majestic Ambukuthi Hills is required to reach these caves. The aroma of coffee stays with you the entire way. It is truly a surreal experience as we step into the palms of history.
+                               </p>
+                            </div>
+                      </div>
+          
+                      <!-- Soochipara Waterfalls -->
+          
+                      <div class="museumHead">
+                          <h4>Soochipara Waterfalls</h4>  
+                      </div>
+          
+                      <div class= "container">
+                          <div class="card-group">
+                              <div class="card ashtamudicards">
+                                <img class="ashtamudicardimg" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFhYZGRgaGh4cGhwaHBkeJR4eIRwcJB4jIR4eIS4lHx4rIRoaJjgmKy8xNTU1HCQ7QDszPy40NTEBDAwMEA8QHhISHjQrIys0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAMIBBAMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAADBAACBQEGBwj/xAA8EAABAwIEAwYFBAIBAgcBAAABAAIRAyEEEjFBUWFxBSKBkaHwBhMyscEH0eHxFEJSYoIWM3KSorLCI//EABgBAQEBAQEAAAAAAAAAAAAAAAEAAgME/8QAIREBAQEAAwEAAgIDAAAAAAAAAAERAiExEkFRImEDMnH/2gAMAwEAAhEDEQA/APN4Z5bTqw2C3JsNTqfULb7NwzRkfVBMNLi0Q0G8RNhwPgg4XAD/ABqzgMzzUpgDUOHeJIMjZug5JXtDFMY+O84tsDaNANJv7C43/XoXx63DdpMY4EsIYwud3Tlc5pMxY6CZtzW/2d8aU8vfMjYtBJjmN9rhfIK2Lc5xDWuIAuwSbxsRqEw6g4NB42e0DQjjNttRzRLZ+WXt/wBQO3KdSmx7SO64lhBEgXaS5sbkGBPWF8yx/aBe0EEkhoaZ/A28Fo4nCgsIBdJE5SZvuRA0vosVlMNEQZkzoBCbZezpdzzli/Mb3v8AsiYMNIyvAGb/AG4AA6dTFl3JEuEacvz7ulnvuN7Il0tJlIie8IJAI4gCZ0iCfui4TFsA/wD6Q60SZsfC5vHFZL6sNAHu2nmgZ9L8xwHgnFrQq43v5mtEAjK119BxEHW+3og1KneBJ2MxYCRMcdvRUY65JIBPK1/srVYjoQf356FMqDqP5IlEhwga3iTrpa267XdGht6JVh3GqbU06LQRmJAIHOT0tCfw+GLqgY1hzuIAbO+aNY0lK9ldoBjm5gCIIg6EwYJ4kTboEziMaXOD2uIcN4vtBzC8mXE+nBM5aNP08FlqtYILg1j+65pABaDcmwgG4OkGY1WwKbsMwvztFR74DS4F8XEFrgch1JcdnRYkJL4ZxQFSQxrz3nDPlgkSc0FsudAMNzAE6zotpmG/y8mJBfRY97s7g4HvND8zmgxHdaSdC2IA0TIWR2j2zVxIYys9oYGty96wMgF78vec60mZN7DZZ1HKRkhznuJEiwv6yD9t0/8AGVKiyqHUXuqB8udUMjvTBE5QHHQyI1FhNwdldnPDfmtJJItIt017xOnK6OVwWtLEYNnySH2dbvTJmABJmCIAELAZXGUtzEcReLRotDtRlRre+SczY/1GUzJgAaROhvdZNKi3Lrcg8yNIyjcrHG73apcGZVYbucTe7Wj8zPBWxDAWtIbaM0ug6zwKDT7KJYSAcoN3uFp4aXPLkU5SxLaQOVoe8/7v1HMMmG+q3f8ArUloGA7OqvMhnd4uECw23PHRFx+FAYGglzgRJsAA0bjfh0jmmsBUzn5j/p1EmxPE89wPEoZe2SQYbcib21142CxfT89svGvsdRt66easMVAhol5sIi3OUDHS4jYTppYA+q5h2XgXc6NvpH9Ba4zOljtPDnK50yNI4gG4nnB80alQDjmGpsNoHPn+yLicUxttTGg26lWwz25nFwDpEibDMADrpeRveFsgNwoJzEQBuQYPTqQvStDGU2tYywZmfFyY0LuE3j+FnUMKSzORm75EEwC9wP0t5CEv2h2m5uZjGhsukwSZ21OtrX4LPKhoYfEsgy5sydSB6QolezMECzNUD5cSRAMRpblIKiz81Z/ZzCF7aLnOJDab5Ii7oY4iJFiL7cFjtq1azDna0AgZGulk2MkGxO269Z2Y57cPUBu4EkGwEd2BfqV5/F0YOcviDMEgxzAiwWdkxi1XAYRzGS9xIgnJI/8AsDI8PNFw+Pe/V4YzTLseQE3HvpkU8Z3soGsgRY8dkzj6EsbSae83VotcnckQToI18liy/XYpt9SjOpaXXBNgAdJBHd4a7rKx1NzHQ4gwJGsQRIjrY+KdGBMBz+64S497vcZJGo5CIgqvatMOLBlLHAHee6LCItoJ/C1MlDBY0kgCTsBzOg80s8HfYm33Wn2i4E91oaItYj73PXqk20BHXnvH2TeX7a0CAQJnp78EJvD37/ZOVKYBtHVJxE+P3TLqi4MW8SoX8rf2r0my07xoOJNvRVeNOKugs1xc0NGo1/BVQ2DC6yB9j4+wj1KHhf3Hkq01xvT+0Wk88bg8fNLnMwdemnJFYdCDHWyPA+kfC3auFrihh6r30nNbkkWDnS0NLX94tkBrSDlHdmbwvafFHYVH5OZpuxxqMBdIztkta1vWRAjU66L4S3XuEzePDeB71TWG7frMaGFxIBmDcTy0jXiuu7OmnpMSyq/K2se4JLZMjMYmAZ0DQIEAZQmXsFMF2YlpAaLmBGwHTdYlbtB9USBLuAP4KBQ7QBIDxJ2Eb7XjTkuV48r6MHx7yTZji3iJmLfZEwrg3Lu62UNEE+AWeGOc/U31AnSd+DVt4OmwUzfvARnkCfzxt0TOP4a4z9hVXV6jsrqjWNEmHQeskAif36rmG7PDC4vAqGDlLicoJ3AOpG02mdYKYwTQ0SQNDJkADz1cruqOewOLracPIDykrbbuMexjGjW033NrARpBi/DmszE1c8XG5i8205C5HkrY7WAbC3GeKz2GHTENY2Teb3I1O5HrzhZu6LMcr4aWl4MZQHQSZP8AxtrB+yBVxAbME5nSSUStUBY9xdd+WdLkXJ05xA5+OS65HExPEnmt8YDlSs3PYAtB3E6j1um2NLmki7hkiJM3jp5pbDNY1/eE5TeDqQePD9lqYuocgjug8BGjreOqUdwFINMvNi7Ll1yuaLwQbxmEm+qTfT+ZWIABm5m2n9aC65Sq5KMWPfcdIM5WXB8fDyUw4eSIBzE5nHKIECQBO5trxHFZs/KUq47KcubSwtNlEuey3OJcXAEkmPHfmorU9dhMQGYaoXZgc4E2Iu5m1v8AiR567+YxtZjTl1BvMEG4vsnqeIDwARcEDMBb14xPLVU7QwPzGAteN45wJiYE/wAaHbh9ZmudIdk4Yl+YAEAXJ0mDtqTbbTktTEYnI5pdcwLg6geGaYjz5q3ZmFyNDQSXAjNAHdJFpzW8fEJTtPtNrH5QwS2QLxYkTYG1hCN+uS9NvxQf3MjCIJzOlpy8rGZgbdViYhjmOdlcAbw0nRsG1yc1wAPBXw9UFpHd3BcItMncjSAIAEkc1nYl5cYAJE6jMRN4Mne++i68eOIzVIccoYQXRzjb1m65UbAa3e89fZQA11F8kGQSTzltoJ23XcXiQWi/Mi878eSrEWq1JBHD390uTddm4nx98V1jvqHI/wAJQouLi225P8LuGDbk72H5QnPmL7XPvRMYd7YDeh5+fRH47Sj3CHGImY5Hb3yV2uc6IdPDpwQnnu+K6WOsQ0xqDGsa+S1JDg1WntGpP4VchIJm8gQZ6acUSpUENd11k8EtVrEDKEfOgbD52uDgJjjfY7bhDc4kk8TPD0j0V8FiskkgGWwBzkXPG0+aG45nmP8AZxtbc20TxllutSPVfB/wlicc52R7aTG3LnAkztlaIJ6yF7p36b4XDYd1XFYio9zCXlzSGA/8WAHMZLovMkwvU/AvZbaOHa4fU8BzhGlrAcF439V/iNorsw091jRUeBeXuBDAeENk/wDeOC62YpdeSqVDa0Ei+mkf2mMTjQ5gaGZcurpJJt1geEa6LBZi3vOcN7trAGwnjudfJa/ZWPoOJc8dwaNgEzvJOq59t9KNFg5x7vCR3uvBqMMU3LrbnZKE5pJgAzAHCeG6CyhEk97hfb7eygxarWzTFhtfX+Enj6wHcAkETAt0PTdPBsybRB9FnnDk12ZnHKYJJkanSDeeScmig3a3I65cw2/4kOMeeXe+izmNJIA4rZ7YpnMyoJOoB2gGRI210QezsMX5mMEvJHe2Ag2k8SQmXoUHDsk7zNgB74rVxBAa0ltyTJJnbSNiL7obsMBUOgOYkBhmPPbgnKeDDzmmRoY0mdneIWOXOcVuGMI5gpOBGbNGvIgxHOAfFKPzBznAjvGG3mLCfHn5InaFQNAY3bWNCZ358kgSTojj/Lur+xS9cSxxDBaT/wBosurqTVHEPFnAtIsNTnv9No2B5/ZEo1y+tk+kgy6eOkzrpfS90zXytb3nkRIkQ6332A67oOADaffvcEyRe50LTbbWf2XltmWuTSxWKyDK1zYAva0+A6Lz2PqfM/0ObWzSfERM8fFOHFNe0uyaEmA6xjkLzpP43y+06glrZygNMODiJk6G1xpEDirhxyojialg1oG5MA6nfW1oG2ithse4DK1oL9MxI9GkQTddwFMESMxIuRFvE852RX4iAbNE6wAI9F1vLOkvUqy0SRN8xNhPJretp1ST3nc8wAB+PFDe8k20Hv8AKLTBc3nqfDS/iFYgMtyI1B+6rRN9JCtkIn7jqoREgJ1IxpMkQBEK1N4AA6/39lXJAHP91apTLQLgydRobn06pQoidJgTw6/j+VdjhlBsTI7pzXjppw1lApP2suCJB1Wf6RlxlsCNZInYnQTqAlMibo1jZouCZgxHQHYa77rlHCl7yxgJmY6f0t8bfDKUaSF9C/TT4Pq16rMS9gbRYcwztkPNwA0bgG86aL1P6c/AtIURXxDA91T6WPEhokwYO6+l0aTWNDWtDWtEAAQAOQXTxaU7V7RZhqLqjyAGi3Mr889tY44rEPrPnvvno0Wa0DaAAF7b9VO1nPqCiAQxpieJ68OXRfPqDMwBbmEEhxOnhxKOXUPEXE4r6WgFrBECfCesbpNjC5wyeA96piuL24QJ+/JL0cxJy6wft7HisNj/AORkmSS7jMt00HMceiVpl5dmBM8USk1zwA6csmJsJGv7JxuHcGm4DZ/mOmitwhtquy3cGgEixuY+wTnZnZxqVA95LGNMzqSQAS1vQ784WO6o3MQBoDBnUla3ZQqvBaTlDZOoFoE8+VoR56Gl2pWY4CmwFoi83MyN767xNlnufktNhqYG2scuSXx1Q5y1hBgg5nFxzcb9Z32VKbby92YnSLAdI9Oit6GjMxJJENAZvFi7mbXE72Fk8cQWtzak2bpA0m2+o+yTaWEnOS1gEkiBmIPrwCBicc0n6Xcr6CPzxWPn6ozVqj9yb+vUpOriHEGLe9TzVDXnxEwOHNAqVAG66rpGnS3/AK1ED5reB9FFoPU5i95a6NIiSTMmfMbneeFl+067skNkDgOUTA1JAHouGoGfV9RN8sgwN3EiUnja8ixIm4nU2j915ZO45yFf8oBshp0vrAGkCIgSJtxQWUw4S92XYamONpVMJiIkESOBCNkDnd1sSdDOvTYLr4qtXyNINMmd8w/ZLYnEy4SLcB70/ZMYjCQfqaRoMp9FbDVWQ0nK4g/TlIMjSTF49VZPfVAnsynvCC4Axw6+/wAKraobb+7KPuS4nvEyA4cTuQREXQnsvPLbgpGWviwNyNpjqlW1Dwkq0wAePTVRmkj8/hUnSXpSXTzVaxN7Ta1vfJVFSLDiuk21m0dFflBMflPuyPTE8PwOap9R00F1drbCf7EH9k2acUeyBEe/yve/ppicNQrudigGvADGF2UASXlxdLrW3jQefp/hX9PKD8PSq1j83O3NAJAAe2DcalsmDxCB+qPww759CvQaAXg03ZRBDmtc7M4C7u40y6RAYNZhbks7D6th3MLGlhBYQMpbpG0Qr1ND0Xzz9Le0y0PwlZzmVWvcWUXNPdaJzQ4EiC6XQY1kSCCtP9Ru3v8AHwz2tdFR4yMA/wCrU+An0W52Xy34qx7X13ZCHMaTBjW9zzk78kq4RSJi+w4ys2hTJdcxPJEx9TIA1kudEkQYbeJMkx/SzyutSYDiSbAanQakWuffFMYRvcyjeSeJsdxtySLKLmxrfQ+O3KU4WAkBrthM8d1mtOfJdaQ62mY6AnaTYdF3HPJ7kkki8JhlZocdNDraEozFMJcTJ21I8yFiq+OYbs8NaHu3OhkQOuis+uGk9zLIgcTJ9LbIVTFuJHCbWHh4K7GmdYnjzF4+yu76HaLXOgWnlt4qZjAMe+qs4AfSXczp9kOviGstIJ65j4ALaXqYjj9MzYC9zHhP2SFepJ71mi/MnmqYnEGbjKNNpKVD91SYjjKrSQDYEjMY28L6IfaoYarhTnKNJEbSbSdDI8EBrpIJFhx09FzI3We7wm/SFoK5DwKis6sCSQ0AEzF7clFdp6HGPkRIHW3gD0nlfksbK7MA0HMCZ4fe6u9zgLHMw/8Axvw22uozGxYgW3/pcePGydMfgw0SDlAJ0gRJPseqbo04GUQIHeO/hxVsFhCQHluWRoYtzEiBPA3Vq7Y4E8ZkLny5d4zSNRrAMos4iRmI9Z0S9CsxhcXsMm0CBHMbeKdr4KWh98wFgbT4a7rNxLSDDoncT1XTjlmGOYh+YyDc8SrMa8S0kjUX280m27geY35rWxz3PIJ0vHCTJ87pv8cjVJuogAEnS2o4fuo2AIF/H3zRP8czBmQLcPHeeaDToEkj3/aJdCu5nhMQo0W0sjVmWi/Pz0S94iNTutZphtjAJm1vPh6r1nwT8Kf5L2uee41zWOiDsHO6WMeK8tTpzebmF+gPgL4eGFoDM2Kj5c+/GIFraLfCZ6b1HqKFFrGhrAGtaIAGgRVFFtko/DU2uNXI3PEF2UZiBMCddyvjH6jY35uIbH0sEC+pJufx4L638SYz5dBxm+w4r4P2rXz1HOJ3sOSfwZ6F2Y0ZwYJIMhoGovN9o6IFV+V7y20uJJHEmTfiNkxT7rSQDJ0IN7kbJZ9xBbF95k8TYwFzrariSZ0tadQNoXWsaBJjpJueZXXvAvE87jqP5VMQCXNILBtBm1hpE/dWIVjWtBLcoMf7X12EnX9lnvcd976aeGyK6i1riHEukdBe8gIVZ7Wbk8gNPVCWY3TUei7XrDWeKSq43uwGiSdTeBy/dL0sSW7AxxTgMPrWl0xsJ159Er8zvSLdV19cmdL8h9kFoSh6r8xLiZJN5Qy5diyqApOsmbKd4zaY1tpf+QiU2IraciGi5696OfvRSK51FcUeIuopPQV8C8XawmbES0fcrmEwjWGXMzPOgdBDeXAp6GskvLi46XjyHDS6z8RiNckiRcwdeq8f1yvTCuMxwJ7zpHBun8obcS95AYWhs9FanQZYEy43M7eEaozqTWN7ojmRc9OC1PmdBXEPDjcmRboht7ODwSSeoP2EKuQGNjso5x/1N9ytSWeHKjcKGk8uI0Q8O0yTmPl/KvVqbnbVC+dABHNay2LKDiKhmx4zznWfRUDjlm8mOKp9TvVMMgXOu1tP4WsyHwNzACIblJ5/ur4elmMyBHHlr4qrm5nC+p1P88k42llZBFyYHREtUeg+A+zWYnEMDnsGQtOR2rxOgtfmOa/Q4C/Pf6c9n58dSOZzQ1+eWztJAPAEggnmF+hIXXj4q6oouFaDwf6iY4hha2IAMn34r5CHBfR/1N7TbApMiT/tyG0cZ3XzulAEbppgLXAbuJ0A/kK7mCZMeU/dHYQLRfmlcTU81zrQGNfeL+BMnjrMJRtVzXcBsI9ypUqOOluiB8x0RJjqrE7UxJ6dEB1QnUqzgqZeSU689FWFwsPFRxtCkq5W8FGNVy2ykqSVAOS4x5Gis6od1IRoXXVXgAB7oBmJMAnUxpOy4yOKrVcNipLdSZUXKlaTJiV1SajsXmu9pJOgny026KjX5iDlsOBMaefBDqMy2zgncctlelUdlyiePJcfn9LDWGe1uok+99VzEVLzlJPTQbRGiBTN7NJ57K2V7zF/BPH/AB97VgOd2aSLLrpI93RKlEi0XTGFaNwD4e7rpeItZxoOMnYqNpjdbfyg5sJX/FAT81EaTQJACHiheIuBHuy06dGdB5IWJwTsxsQACXO2vYeNlnlxxkLB0wRcCRBAHpvcLmIdmeBMAEAERvqT6+SvhMO4mGznymWxOgBAHO/mV9CwvwLWoYdwLWvq13tYBezXCXE8MrQ823hHHjp0D4c+GsY+jRr4Yim4CplcHAGRngQRGUmmwXzf+Y6bWH1HsjtOo6pVoVmZKlOC0zarTOlRtrXlpF4MaTCW+HBiQWtqMpso/KkBoIcKmdwIgmwy5Sdbk3XoC0TMXFgesT9h5Lcii6VxmJaxjnO0A6Smlj/EdOaLjaw/panqr4t8XYrPXc88THJYQ9F6PtDCS4n2VnVcKIEJ5TtQm2nGl5SmIOux93TdZ0LMxDpWcIL3AkwdBEFLsuixGypvsFFZzAhOb1RWvuUTODqhEXNXGsJ0ThycEOo+RACkrlA3VHuXMpOgVvkcTCkDm4rgKOABoJRflTt4I1FVbNa44eXJGLI0EodRKUyDiPNRW8CopN/HQ9wMAdBBHjKoxjCQMnWZGicdhS6LC17mI/KnyXAybAc9eKiCwm4+lvQenBEfSA7zT0IUdTdE5SeevsKFhGhACgGKJN/VHw2HAvqmcPRDgCL/ALpylSMXb0W5AQDDwVqeDcbraoYUkwRATX+KG2AlOM6z8B2SXRoLr0bfhAPYW/NY0OsSQTAOtuMTCWwFA5hztdeq7KwL330aLDnzWsmM6d7F+FsPTaHBocQWkOvPddLY93B5r02UeWiDhKGRsJhc63EUUUUUKzO18uU5tI0Wk42Xk/iLFy10mDEAfdPGds8nz74gxILyBYTZZVQ9zmrdtVRnI4rOLyGrVUKV3a380nUR65Sz3LNaAeEFzUYdF0MWUDF1QtKYLEIi6Co1h0TVPDtAvdVYyO8Qbm1l2o9ouYPJRFDRt5aKjh0Cr89vCOajgSJEEeX2WU497BaZ8JVM86KxpTw9UJ1PrbmFJKhkDggvKs594iffFVykkBMAcqI5p8vVRKexe4AFrBc6k3lGwYYRlIgjjvz8tlIbHDY2PvxXKbQXm+ggaLWKu4ioPpYCOogJRkC79/eivUcGEtjNm+ka+zorswpF3tynQjdGCr4UZYNwCdJut3DNBtrbxSOGweZwMW298V6eh2BUhjoGVwlpzDTnwW4zSNEahoJPNaNLDWHdutjCdgPA7zmAnnK9N2f2e2m0CATFyfeidwPNdkdlQ8Oc0QdAfuvX0aIaIAjor5RwVlm8tMiKKKIaRRRRSVeJB6LxvxDhnQTBkwF7GpVa0SSAF5/tjE0nWDhPj91rizyfJO1aRznqkq7AV6TtSi8Pd3Q5vA38lh4nDbgESmxRh16NzfRKuZH+y167PBI1hPArNaJuaNih5yOauaSoafD8LKUfff7rrGcpHJEbhzv+6tMC2gQViDP9x0squOvdtyH7qhfOoj8rjnLJUdh2kzKo+gNiisEoraYUiTWO0zFSpTdGvotBtIcFdtNVpxnMocvypSpOMmCB0Wo6NFTO3WZ6X9Aj6p+YU+Uff9KJ3Mdg+P8A0hdRtORoswlTYnzTbMBUNpb1v95Xo6eGm2TXTZadLs7K0EuY0b94Wi+0+wu7nXlWdgmJJeSNDBgezutLCdjEmXPc4TvqetytrD9rBkhtJj2kR35PoICbw/aAJAFJjP8A0Fw/KZGLomGwAZAygW6rXw2WQHkkDQSYjZFwGDzXykRuT+60KWDaxwNjwP8AZVaHaeHMS3T18SjUGkXII5rpxFMbweUpGriqV+84nmQhNQVhGv3XfmbkgL5l2v2/WY8gPloNrWjoRKSb+oT2wHNFrHQepBVh7fWvmSYBVHYkA6hfFv8AxjVJOV5Ek2Djp4pZ/b+Iff5jxyzOHqFdHK+2nGNGpHn+dEnX7WAmC09CV8lp/GlanlDnsqCDZ4//AEDfZL4n4ze893KwC/dbNo/65V0Mr6Dj+1iRa597ysDEdqvJ1cPVee/8RZwJDfPL5jTyQavaMmQXjoQRHqq8j8tZ/ar5IJkeCBWxDHcish2PfoCY5gH1iySrPz3JM+MHwEI+z8tDFupgHvg8lh1g2e6Y81erhjYteBwA/lJvDmmHeaLy1fOC59l0Bun3VDqJ7s8T94XMm3BBEc87aILguP1vC452wUlcqs2gTc6blDOIymB5lEdWfwgdRfyRpc5I4qiI7spdjXHUWRmMABiB5BBFFTw8FBBQhiBEC55IZcSbkAIJjOIufOIKu8NyEi7pHSN9+iSa0G5PmutfPda4+QKMGnv8bn6BRKBp4nyKisOvrDnnaTtJ4fhceAdfX7dEE4kz4IhpA0/mEy7NAbtEXJPXZdJy1mxVhbMB34WlgcKHGGgk7wJhZLnMBBccxI2FuGgARmdo5RAMbkiR/a3OUYr2uDpGi0uc5osI/wCQ4iDolsX2zMxAXk39rAi5vzJSzu0QVfUGPQ1seXAxJXme1H1mEvFQQROUESIiwHRLYntEbGVmPqFx3RecM4hV6zqhlzyDf+oj9lnV8Du0weGoPgU4/CNkuaSCTJMzJ4lLV6rwZM6AWjbksfXG/lv5sZr2ObYjLfq3yOi5nI1IGxLTBjoLEe5TGMrl4kd0yNtvNZrnAkAty3uQTEdE9Aei4RB7zZJnfXf2Ux8hkS2eVp+wSlWiGnWBH+smfCFWnI+gz5g+/JSPUHZhFp4ideis4PbpB8v6WY6pLhmkEGxP2Mbeaj8W6YnKeFiD6KTWZVJ+oeqs4tPFZmGc5xjkTYkHnbTdM03A93Pf/ibEH0MLNkrUuGzCXewIpAAhCzHQjz/dc7Lx8anKX0u+np+f3QnvhMvPJCfTJ2TOX7F4/ouH213QvmyYCIcKenVCrYZw0XTWB6L7GIMTrxXWYgbi/ABK4Zh00O3NW+S/POU8zZWLTjnn/WB19xKrlcR3oj7/AGhRtLQl08r298kbNsTl8QENAGm7RoaPD8lENNwGn2TTKrQ3QnoCft90GrjWHZ3/ALT+Vk9FK9J40i+sz+y63Dv2ImdAwa7Kz8VuAfGyozGwQQHAjQg3TB0t/luFi2/Uj0UVPnk3ylRK2vp1PUe+KNHcd1/BUUWZ4xyJg38UB5UUUyVVXaqKKTmxUbouKLHJ04gv0KWq/SoosRslW0KRxOi6ou3FmkG6+KCfqUUXRgZ2gV3/AEBRRRirTBbFrhavaTAaAJAJjXfzXFEVEOzXnNEmL2204LSqbqKIpitLQ9EOjqVFFyvjpPXXbrtP8KKLfH8OfIs/6/NWbouKLV9UW3Xa2qiiyaRm/mjMaJ0XVFUQDF20sgO0UUWp4gmPPEriiik//9k=" class="card-img-top" alt="...">
+                              </div>
+                              <div class="card ashtamudicards">
+                                <img class="ashtamudicardimg" src="https://www.holidify.com/images/cmsuploads/compressed/100816080236(BannerImage)SOOCHIPPARAWATERFALLSIMAGE-15_20180118201857.JPG" class="card-img-top" alt="...">
+                              </div>
+                              <div class="card ashtamudicards">
+                                <img class="ashtamudicardimg" src="https://www.banasura.com/resort/wayanad-nature-resort-kerala-soojipara.jpg" class="card-img-top" alt="...">
+                              </div>
+                            </div>
+          
+                            <div class="ashtamudicontent">
+                                <img src="https://www.google.com/maps/vt/bpb=CgwiChAOCgYIqAIQygESAggAEhQIAjIQCg4KCg0R4NsGFfrGZC04ARoLEgVlbi1HQhoCSU4gACoFLQAAoD8" alt="">
+                                <p>
+                                  Soochipara Falls also known as Sentinel Rock Waterfalls is a three-tiered waterfall in Vellarimala, Wayanad, India. It is surrounded by deciduous, evergreen and montane forests. Locally referred to as Soochipara, the 15-20 minute drive from Meppadi to Sentinel Rock Waterfalls has views of a number of Wayanad's tea estates. The Sentinel Rock Waterfalls is 200 metres and offers a cliff face that is used for rock climbing. The water from Soochipara Falls later joins Chulika River or popularly known as Chaliyar River after Velarimala Hills near Cherambadi in Kerala. Once people reach the parking area, they have to pass through a security check at the entrance where they make sure you don't carry any plastic. It takes 10-15 minutes walk to the waterfalls and water flow is less during summer, which makes it easy to reach the rocks where water falls.                                 </p>
+                            </div>
+                      </div>
+          
+                   
+
+         
+    
+
+    
+</body>
+</html>
