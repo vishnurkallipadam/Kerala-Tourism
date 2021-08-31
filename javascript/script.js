@@ -1,17 +1,93 @@
 let mail=document.getElementById('signupMail');
 let emailWarning=document.getElementById("emailWarning");
-
+let confrmpass = document.getElementById('confirmPassword');
 let password=document.getElementById('password');
 let passStrength=document.getElementById('strength');
 let eye=document.getElementById('eye');
 let stateOfEye = false;
+let num = document.getElementById('phonenumber');
+let pass = document.getElementById('signpassword');
+let signmail = document.getElementById('signinMail');
+let err = document.getElementById('signemailWarning')
+
+
+function signinValidate(){
+    let val=0;
+    if(signEmailCheck()){
+        val+=18;
+    }
+    let errr=document.getElementById('signpassWarning');
+    if(pass.value==""){
+        errr.innerHTML = "ENTER PASSWORD";
+        errr.style.color = "red"
+    
+    }else{
+        errr.innerHTML = "";
+        val+=12; 
+
+    }
+    console.log(val);
+    if(val==30){
+        return true;
+    }else{
+        return false;
+    }
+
+}
+
+function signEmailCheck(){
+    let regexp = /^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z\-]{2,3})(.[a-z\-]{2,3})?$/
+    console.log(signmail.value.trim());
+    let mail=signmail.value.trim();
+    if(regexp.test(mail))
+    {
+        err.innerHTML = "";
+        return true;
+
+    }else{
+        err.innerHTML = "ENTER VALID EMAIL";
+        err.style.color = "red"
+        return false;
+    }
+
+}
+
+
+function validate(){
+    let valid = 0;
+    if(emailCheck()){
+        valid+=10
+    }
+    if(passwordCheck(password.value.trim())){
+        valid+=10
+    }
+    if(passwordConfirm(confrmpass.value.trim()))
+    {
+        valid+=10;;
+    }
+    if(numberValidation(num.value.trim())){
+        valid+=10;
+    }
+     console.log(valid);
+    if(valid==40){
+        return true;
+    }else{
+        return false;
+    }
+
+}
+
+ mail.addEventListener("click", function() {
+   emailCheck();
+  });
 
 
 
 // email validation
 function emailCheck(){
     let regexp = /^([A-Za-z0-9\.-]+)@([A-Za-z0-9\-]+).([a-z\-]{2,3})(.[a-z\-]{2,3})?$/
-    if(regexp.test(mail.value))
+
+    if(regexp.test(mail.value.trim()))
     {
         emailWarning.innerHTML = "";
         return true;
@@ -40,14 +116,20 @@ function togglePassword(){
     }
 
 }
+password.addEventListener('click', function(){
+    alert("PASSWORD SHOULD CONTAIN AN UPPERCASE TEXT,A LOWER CASE TEXT,A NUMBER AND A SYMBOL WITH MORE THAN 8 LETTERS LENGTH");
+    passwordCheck(password.value.trim());
+})
+
 // password validtion
 password.addEventListener("keyup", function() {
-    let passvalue = password.value;
+    let passvalue = password.value.trim();
     return passwordCheck(passvalue);
     
   });
 
 function passwordCheck(mypass){
+    
     console.log("started");
     var strength = 0;
 
@@ -61,25 +143,25 @@ function passwordCheck(mypass){
     }
     
     //other validation
-    let lowerCase = /[a-z]/
+    let lowerCase = /[a-z]{1,}/
     if (lowerCase.test(mypass)) {
         strength += 16
         console.log(strength);
     }
 
-    let upperCase = /[A-Z]/
+    let upperCase = /[A-Z]{1,}/
     if (upperCase.test(mypass)) {
         strength += 18
         console.log(strength);
     }
 
-    let regularNumber = (/[0-9]/i)
+    let regularNumber = /[0-9]{1,}/
     if (regularNumber.test(mypass)) {
         strength += 16
         console.log(strength);
     }
 
-    let specialChars = (/[^a-z0-9]/i)
+    let specialChars = /[^A-Za-z0-9]+/ 
     if (specialChars.test(mypass)) {
         strength += 20
         console.log(strength);
@@ -113,7 +195,7 @@ function passwordCheck(mypass){
                 passStrength.style = 'width : 60%'
                 
             } else
-                if (strength > 60 && strength < 81) {
+                if (strength > 60 && strength < 99) {
                     passWarning.innerHTML = "STRONG";
                     passWarning.style.color = "green"
                     passStrength.classList.remove('progress-bar-warning');
@@ -132,12 +214,20 @@ function passwordCheck(mypass){
 
 }
 
+confrmpass.addEventListener('click',function(){
+    passwordConfirm(confrmpass.value);
+});
+
+
 // confirm password checking
-function passwordConfirm(){
+confrmpass.addEventListener('keyup',function(){
+    let cnfrmpass = confrmpass.value.trim();
+    passwordConfirm(cnfrmpass);
+});
 
-    let confrmpass = document.getElementById('confirmPassword').value;
+function passwordConfirm(confrmpass){
+ 
     let confirmpasswrng = document.getElementById('passwordConfirmWrng');
-
     if(confrmpass == password.value){
         confirmpasswrng.innerHTML = "";
         return true;
@@ -152,11 +242,11 @@ function passwordConfirm(){
 }
 
 // phone numer validation
-let num = document.getElementById('phonenumber');
+
 
 num.addEventListener("keyup", function() {
     let number = num.value;
-    return numberValidation(number);
+    numberValidation(number);
     
   });
 function numberValidation(num){

@@ -71,12 +71,12 @@
             <!-- signin form -->
             <div >
           
-              <form action="signin.html" class=" signform col-md-6">
-               <br><br> 
+              <form action="districts.html" onsubmit="return validate()" class=" signform col-md-6">
+               <br>
 
                 <div class="form-group col-md-8">
                   <label for="exampleInputEmail1">Email address</label>
-                  <input type="email" onkeyup="return emailCheck()" class="form-control col-md-6" id="signupMail" aria-describedby="emailHelp" placeholder="Enter email">
+                  <input type="email" onkeyup="emailCheck()" class="form-control col-md-6" id="signupMail" aria-describedby="emailHelp" placeholder="Enter email">
                   <span id="emailWarning" class="form-text "></span>                  
 
                 </div>
@@ -100,7 +100,7 @@
                 </div>
                 <div class="form-group col-md-8">
                   <label for="exampleInputPassword2">Confirm Password</label>
-                  <input type="password" onkeyup="return passwordConfirm()" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+                  <input type="password" onkeyup=" passwordConfirm()" class="form-control" id="confirmPassword" placeholder="Confirm Password">
                   <span id="passwordConfirmWrng" class="form-text "></span>
                 </div>
                 <div class="form-group col-md-8">
