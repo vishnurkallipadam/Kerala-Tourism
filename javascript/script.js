@@ -11,20 +11,19 @@ let signmail = document.getElementById('signinMail');
 let err = document.getElementById('signemailWarning')
 
 
+pass.addEventListener("keyup", function() {
+    let passvalue = pass.value.trim();
+    return passwordCheck(passvalue);
+    
+  });
+
 function signinValidate(){
     let val=0;
     if(signEmailCheck()){
         val+=18;
     }
-    let errr=document.getElementById('signpassWarning');
-    if(pass.value==""){
-        errr.innerHTML = "ENTER PASSWORD";
-        errr.style.color = "red"
-    
-    }else{
-        errr.innerHTML = "";
-        val+=12; 
-
+    if(passwordCheck(pass.value.trim())){
+        val+=12;
     }
     console.log(val);
     if(val==30){
